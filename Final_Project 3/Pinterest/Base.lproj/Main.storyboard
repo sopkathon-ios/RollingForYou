@@ -94,6 +94,7 @@
                                     <outlet property="commentLabel" destination="7p9-d4-C0r" id="f3j-b7-Msn"/>
                                     <outlet property="containerView" destination="dYa-Ve-ynZ" id="OXl-AY-7xT"/>
                                     <outlet property="imageView" destination="khC-vr-mlt" id="AB3-3Q-dAV"/>
+                                    <outlet property="peopleLabel" destination="Am2-ZS-p9e" id="WUQ-o1-djL"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SecondCell" reuseIdentifier="SecondCell" id="XJm-w4-0SI" customClass="SecondCell" customModule="Pinterest" customModuleProvider="target">
@@ -151,7 +152,6 @@
         <!--Gallery View Controller-->
         <scene sceneID="Szq-yj-Nqi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eet-e5-fZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GalleryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t8n-wW-kmX" customClass="GalleryViewController" customModule="Pinterest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lzz-R6-Il2"/>
@@ -214,6 +214,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eet-e5-fZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2242" y="-968"/>
         </scene>
@@ -239,7 +240,6 @@
         <!--Album View Controller-->
         <scene sceneID="Wct-Fe-r5G">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="znX-0o-lAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AlbumViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DcA-r7-GTm" customClass="AlbumViewController" customModule="Pinterest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UXM-Zv-V3o"/>
@@ -251,6 +251,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znX-0o-lAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3096" y="-1009"/>
         </scene>
@@ -279,16 +280,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="솝커톤에서 있었던 일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-W2-Y2x">
-                                                <rect key="frame" x="17" y="548" width="142" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="142" id="msI-kB-8Qk"/>
-                                                </constraints>
+                                                <rect key="frame" x="17" y="548" width="380" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추억 함께하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-pw-w0n">
-                                                <rect key="frame" x="17" y="764" width="142" height="21"/>
+                                                <rect key="frame" x="17" y="764" width="380" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -317,7 +315,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="1Xb-dx-5bp"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가나다라마바사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhF-y4-aZH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  가나다라마바사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhF-y4-aZH">
                                                 <rect key="frame" x="69" y="804.5" width="328" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -343,7 +341,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msW-Er-Obf">
                                                 <rect key="frame" x="61" y="847" width="336" height="48"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아자차카타파하" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-6x-E2E">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  아자차카타파하" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-6x-E2E">
                                                         <rect key="frame" x="8" y="13.5" width="328" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -409,7 +407,10 @@
                                                     <constraint firstAttribute="width" constant="30" id="1Bw-mJ-pyz"/>
                                                     <constraint firstAttribute="height" constant="30" id="POI-lV-g3A"/>
                                                 </constraints>
-                                                <state key="normal" title="게시"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="게시">
+                                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -443,7 +444,7 @@
                                             <constraint firstItem="yWS-hI-rfw" firstAttribute="top" secondItem="4T7-gS-joO" secondAttribute="top" id="l2A-U0-XtC"/>
                                             <constraint firstItem="2Ok-22-jba" firstAttribute="top" secondItem="eWh-jc-1GU" secondAttribute="bottom" constant="20" id="nlQ-Pf-2yB"/>
                                             <constraint firstItem="k2j-pw-w0n" firstAttribute="top" secondItem="niE-JI-GXq" secondAttribute="bottom" constant="8" id="pNq-kF-6bd"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ac7-W2-Y2x" secondAttribute="trailing" constant="255" id="pQl-OZ-z7F"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ac7-W2-Y2x" secondAttribute="trailing" constant="17" id="pQl-OZ-z7F"/>
                                             <constraint firstAttribute="trailing" secondItem="niE-JI-GXq" secondAttribute="trailing" constant="17" id="qpF-ci-Itg"/>
                                             <constraint firstItem="niE-JI-GXq" firstAttribute="top" secondItem="Ac7-W2-Y2x" secondAttribute="bottom" constant="8" id="sGh-oi-mdI"/>
                                             <constraint firstItem="Oi2-6H-0uO" firstAttribute="leading" secondItem="eWh-jc-1GU" secondAttribute="trailing" constant="8" id="ukZ-Zh-ugB"/>
