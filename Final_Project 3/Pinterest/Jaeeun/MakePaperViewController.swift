@@ -14,6 +14,8 @@ class MakePaperViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      setupTap()
 
         // Do any additional setup after loading the view.
     }
@@ -54,5 +56,16 @@ class MakePaperViewController: UIViewController {
         //imageView.image = image
     }
     
-
+  func setupTap() {
+    let viewTap = UITapGestureRecognizer(target: self, action: #selector(viewTapped)
+    )
+    
+    self.view.addGestureRecognizer(viewTap)
+  }
+  
+  @objc func viewTapped() {
+    self.view.endEditing(true)
+    
+  }
+  
 }
