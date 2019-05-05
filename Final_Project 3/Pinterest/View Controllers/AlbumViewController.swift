@@ -23,7 +23,7 @@ class AlbumViewController: UIViewController {
             imagePicker.sourceType = .savedPhotosAlbum
             imagePicker.allowsEditing = false
             
-            present(imagePicker, animated: true, completion: nil)
+            present(imagePicker, animated: false, completion: nil)
         }
         
     }

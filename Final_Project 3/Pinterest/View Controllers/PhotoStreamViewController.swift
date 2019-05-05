@@ -34,7 +34,6 @@ import AVFoundation
 class PhotoStreamViewController: UICollectionViewController {
   
   var photos = Photo.allPhotos()
-//  var imagePicker = UIImagePickerController()
   
   override var preferredStatusBarStyle : UIStatusBarStyle {
     return UIStatusBarStyle.lightContent
@@ -43,8 +42,10 @@ class PhotoStreamViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
    
+    //imagePicker.delegate = self
+    
     if let patternImage = UIImage(named: "Pattern") {
-      view.backgroundColor = UIColor(patternImage: patternImage)
+      view.backgroundColor = UIColor.white
     }
     collectionView?.backgroundColor = UIColor.clear
     collectionView?.contentInset = UIEdgeInsets(top: 23, left: 10, bottom: 10, right: 10)
@@ -53,22 +54,46 @@ class PhotoStreamViewController: UICollectionViewController {
       layout.delegate = self
     }
   }
+    
+    @IBAction func tabBarButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard.init(name: "Mypage", bundle: nil)
+        guard let dvc = storyboard.instantiateViewController(withIdentifier: "MypageVC") as? MypageVC else{
+            return
+        }
+        navigationController?.pushViewController(dvc, animated: false)
+    }
+
+    
     @IBAction func tabAddButton(_ sender: Any) {
-      guard let dvc = storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") as? GalleryViewController
-        else{
-          return
-      }
-      
-      self.present(dvc, animated: true)
+        
     }
     
-}
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+        
+        
+        
+        self.dismiss(animated: true, completion: { () -> Void in
+        })
+        
+        //imageView.image = image
+    }}
 
 extension PhotoStreamViewController {
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return photos.count
   }
+    
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // 각 페이퍼 클릭했을 때 이동하는거 짜야됨
+    
+    guard let dvc = storyboard?.instantiateViewController(withIdentifier: "WriteViewController") as? WriteViewController else{
+        return
+    }
+    navigationController?.pushViewController(dvc, animated: true)
+    
+    }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
