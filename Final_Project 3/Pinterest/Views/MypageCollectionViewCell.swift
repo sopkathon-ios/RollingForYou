@@ -10,7 +10,12 @@ import UIKit
 
 class MypageCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var imgView: UIImageView!
+  @IBOutlet var imgView: UIImageView! {
+    didSet {
+      imgView.layer.cornerRadius = 0.05 * imgView.bounds.size.height
+      imgView.clipsToBounds = true
+    }
+  }
   @IBOutlet var titleLabel: UILabel!
   @IBOutlet var nameLabel: UILabel!
   @IBOutlet var countLabel: UILabel!
