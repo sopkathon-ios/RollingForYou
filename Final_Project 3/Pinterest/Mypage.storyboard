@@ -95,9 +95,10 @@
                                                             </constraints>
                                                             <size key="customSize" width="145" height="190"/>
                                                             <connections>
+                                                                <outlet property="countLabel" destination="9t0-Fx-LYb" id="xkD-43-nnJ"/>
                                                                 <outlet property="imgView" destination="uwI-yN-kmn" id="72R-Zc-lGP"/>
-                                                                <outlet property="nameLabel" destination="1An-Jo-zuy" id="SRy-hD-StU"/>
-                                                                <outlet property="titleLabel" destination="Kay-Zi-RpI" id="VsB-rh-qqT"/>
+                                                                <outlet property="nameLabel" destination="1An-Jo-zuy" id="rIv-4w-cY7"/>
+                                                                <outlet property="titleLabel" destination="Kay-Zi-RpI" id="LDe-6g-4eZ"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>

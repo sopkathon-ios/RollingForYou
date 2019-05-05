@@ -11,5 +11,8 @@ import UIKit
 class MypageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imgView: UIImageView!
-    
+  @IBOutlet var titleLabel: UILabel!
+  @IBOutlet var nameLabel: UILabel!
+  @IBOutlet var countLabel: UILabel!
+  
 }
