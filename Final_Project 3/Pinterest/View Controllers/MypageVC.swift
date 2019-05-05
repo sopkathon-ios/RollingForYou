@@ -13,7 +13,12 @@ class MypageVC: UIViewController {
     var categories = ["Action", "Drama", "Science Fiction", "Kids", "Horror"]
 
     
-    @IBOutlet var imgBtn: UIButton!
+    @IBOutlet var imgBtn: UIButton! {
+        didSet {
+            imgBtn.layer.cornerRadius = 0.5 * imgBtn.bounds.size.width
+            imgBtn.clipsToBounds = true
+        }
+    }
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var myMemoriesLabel: UILabel!
     @IBOutlet var ourMemoriesLabel: UILabel!
@@ -24,7 +29,7 @@ class MypageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.isNavigationBarHidden = true
         
 
     }
