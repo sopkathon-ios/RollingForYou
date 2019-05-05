@@ -82,12 +82,7 @@ class PinterestLayout: UICollectionViewLayout {
       
       // 4. Asks the delegate for the height of the picture and the annotation and calculates the cell frame.
       let photoHeight = delegate.collectionView(collectionView, heightForPhotoAtIndexPath: indexPath)
-      
-      var height = cellPadding * 2 + photoHeight
-      if(indexPath.item == 1){
-        height = CGFloat(180)
-      }
-      
+      let height = cellPadding * 2 + photoHeight
       let frame = CGRect(x: xOffset[column], y: yOffset[column], width: columnWidth, height: height)
       let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
       

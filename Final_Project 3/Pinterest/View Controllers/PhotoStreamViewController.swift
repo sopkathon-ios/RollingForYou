@@ -34,7 +34,6 @@ import AVFoundation
 class PhotoStreamViewController: UICollectionViewController {
   
   var photos = Photo.allPhotos()
-//  var imagePicker = UIImagePickerController()
   
   override var preferredStatusBarStyle : UIStatusBarStyle {
     return UIStatusBarStyle.lightContent
@@ -53,15 +52,7 @@ class PhotoStreamViewController: UICollectionViewController {
       layout.delegate = self
     }
   }
-    @IBAction func tabAddButton(_ sender: Any) {
-      guard let dvc = storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") as? GalleryViewController
-        else{
-          return
-      }
-      
-      self.present(dvc, animated: true)
-    }
-    
+  
 }
 
 extension PhotoStreamViewController {

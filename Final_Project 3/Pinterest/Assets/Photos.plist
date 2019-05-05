@@ -73,8 +73,6 @@
 		<string>07</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>Lunch</string>
 		<key>Comment</key>
@@ -83,8 +81,6 @@
 		<string>08</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>One More Thing...</string>
 		<key>Comment</key>
@@ -93,8 +89,6 @@
 		<string>09</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>Milan Beckoning Marin</string>
 		<key>Comment</key>
@@ -103,8 +97,6 @@
 		<string>10</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>Shiver Me Timbers!</string>
 		<key>Comment</key>
@@ -113,8 +105,6 @@
 		<string>11</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>We&apos;re Jammin&apos;</string>
 		<key>Comment</key>
@@ -123,8 +113,6 @@
 		<string>12</string>
 	</dict>
 	<dict>
-		<key>People</key>
-		<string>25</string>
 		<key>Caption</key>
 		<string>Busted!</string>
 		<key>Comment</key>
