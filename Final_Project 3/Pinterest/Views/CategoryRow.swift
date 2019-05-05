@@ -52,3 +52,15 @@ extension CategoryRow : UICollectionViewDelegateFlowLayout {
   }
   
 }
+extension CategoryRow: UICollectionViewDelegate {
+
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+//    let storyboard = UIStoryboard(name: "Mypage", bundle: nil)
+//    let dvc = storyboard.instantiateViewController(withIdentifier: "MyListDetailVC") as! MyListDetailVC
+//    let rootVC = storyboard.instantiateViewController(withIdentifier: "MypageVC") as! MypageVC
+//    let rootVC = UINavigationController.
+//
+//    rootVC.navigationController?.pushViewController(dvc, animated: true)
+  }
+}

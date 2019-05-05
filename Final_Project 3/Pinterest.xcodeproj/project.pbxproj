@@ -27,6 +27,7 @@
 		DCD99362227F110A00814B78 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9935E227F110A00814B78 /* NetworkResult.swift */; };
 		DCD99363227F110A00814B78 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9935F227F110A00814B78 /* Status.swift */; };
 		DCFF25A1227F21C900D8D732 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFF25A0227F21C900D8D732 /* Mypage.storyboard */; };
+		DCFF25A3227F2CF100D8D732 /* MyListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFF25A2227F2CF100D8D732 /* MyListDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DCD9935E227F110A00814B78 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		DCD9935F227F110A00814B78 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		DCFF25A0227F21C900D8D732 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		DCFF25A2227F2CF100D8D732 /* MyListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				DCD99359227F10FB00814B78 /* MypageVC.swift */,
 				77E6C75D1F2E38270015ED2A /* PhotoStreamViewController.swift */,
+				DCFF25A2227F2CF100D8D732 /* MyListDetailVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				77E6C76C1F2E384A0015ED2A /* AppDelegate.swift in Sources */,
 				DCD99363227F110A00814B78 /* Status.swift in Sources */,
 				77E6C76F1F2E385E0015ED2A /* PhotoStreamViewController.swift in Sources */,
+				DCFF25A3227F2CF100D8D732 /* MyListDetailVC.swift in Sources */,
 				DCD99356227F0D9500814B78 /* CategoryRow.swift in Sources */,
 				77E6C7701F2E385E0015ED2A /* AnnotatedPhotoCell.swift in Sources */,
 			);
