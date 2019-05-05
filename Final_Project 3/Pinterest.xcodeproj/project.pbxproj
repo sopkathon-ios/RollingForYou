@@ -27,6 +27,10 @@
 		DCD99362227F110A00814B78 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9935E227F110A00814B78 /* NetworkResult.swift */; };
 		DCD99363227F110A00814B78 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9935F227F110A00814B78 /* Status.swift */; };
 		DCFF25A1227F21C900D8D732 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFF25A0227F21C900D8D732 /* Mypage.storyboard */; };
+		F4DA39B3227F2E47001CC984 /* Paper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DA39B2227F2E47001CC984 /* Paper.storyboard */; };
+		F4DA39B5227F2E9D001CC984 /* PaperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39B4227F2E9D001CC984 /* PaperVC.swift */; };
+		F4DA39B7227F2EF6001CC984 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39B6227F2EF6001CC984 /* CustomButton.swift */; };
+		F4DA39B9227F2F0D001CC984 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA39B8227F2F0D001CC984 /* CustomImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		DCD9935E227F110A00814B78 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		DCD9935F227F110A00814B78 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		DCFF25A0227F21C900D8D732 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		F4DA39B2227F2E47001CC984 /* Paper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paper.storyboard; sourceTree = "<group>"; };
+		F4DA39B4227F2E9D001CC984 /* PaperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperVC.swift; sourceTree = "<group>"; };
+		F4DA39B6227F2EF6001CC984 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F4DA39B8227F2F0D001CC984 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			children = (
 				DCD99359227F10FB00814B78 /* MypageVC.swift */,
 				77E6C75D1F2E38270015ED2A /* PhotoStreamViewController.swift */,
+				F4DA39B4227F2E9D001CC984 /* PaperVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -101,6 +110,8 @@
 				DC1115FC227EFB51006AF6D3 /* SecondCell.swift */,
 				DCD99355227F0D9500814B78 /* CategoryRow.swift */,
 				DCD99357227F0E7600814B78 /* MypageCollectionViewCell.swift */,
+				F4DA39B6227F2EF6001CC984 /* CustomButton.swift */,
+				F4DA39B8227F2F0D001CC984 /* CustomImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 				7B0AC7C41AAEF90000885D4A /* LaunchScreen.xib */,
 				7B0AC7BF1AAEF90000885D4A /* Main.storyboard */,
 				DCFF25A0227F21C900D8D732 /* Mypage.storyboard */,
+				F4DA39B2227F2E47001CC984 /* Paper.storyboard */,
 			);
 			name = "Storyboards & Xibs";
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -259,6 +272,7 @@
 			files = (
 				77E6C7691F2E38410015ED2A /* Images.xcassets in Resources */,
 				DCFF25A1227F21C900D8D732 /* Mypage.storyboard in Resources */,
+				F4DA39B3227F2E47001CC984 /* Paper.storyboard in Resources */,
 				7B0AC7C11AAEF90000885D4A /* Main.storyboard in Resources */,
 				7B0AC7C61AAEF90000885D4A /* LaunchScreen.xib in Resources */,
 				77E6C76B1F2E38470015ED2A /* Photos.xcassets in Resources */,
@@ -336,9 +350,12 @@
 				DCD99360227F110A00814B78 /* Requestable.swift in Sources */,
 				77E6C76C1F2E384A0015ED2A /* AppDelegate.swift in Sources */,
 				DCD99363227F110A00814B78 /* Status.swift in Sources */,
+				F4DA39B9227F2F0D001CC984 /* CustomImage.swift in Sources */,
 				77E6C76F1F2E385E0015ED2A /* PhotoStreamViewController.swift in Sources */,
 				DCD99356227F0D9500814B78 /* CategoryRow.swift in Sources */,
 				77E6C7701F2E385E0015ED2A /* AnnotatedPhotoCell.swift in Sources */,
+				F4DA39B5227F2E9D001CC984 /* PaperVC.swift in Sources */,
+				F4DA39B7227F2EF6001CC984 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
