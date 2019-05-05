@@ -52,6 +52,7 @@ class PhotoStreamViewController: UICollectionViewController {
     if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
       layout.delegate = self
     }
+    
   }
     @IBAction func tabAddButton(_ sender: Any) {
       guard let dvc = storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") as? GalleryViewController
