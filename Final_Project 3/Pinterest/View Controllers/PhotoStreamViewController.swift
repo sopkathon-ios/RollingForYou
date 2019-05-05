@@ -53,6 +53,7 @@ class PhotoStreamViewController: UICollectionViewController {
     if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
       layout.delegate = self
     }
+    
   }
     
     @IBAction func tabBarButton(_ sender: Any) {
