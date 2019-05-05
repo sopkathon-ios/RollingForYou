@@ -19,6 +19,7 @@
 		7B0AC7C11AAEF90000885D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0AC7BF1AAEF90000885D4A /* Main.storyboard */; };
 		7B0AC7C61AAEF90000885D4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B0AC7C41AAEF90000885D4A /* LaunchScreen.xib */; };
 		842EA42A227F55A200685CDD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842EA429227F55A200685CDD /* WriteViewController.swift */; };
+		842EA42C227F6E5300685CDD /* MypageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842EA42B227F6E5300685CDD /* MypageDetailVC.swift */; };
 		8430A1EA227F293D000EDC83 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430A1E9227F293D000EDC83 /* GalleryViewController.swift */; };
 		8430A1EC227F2D82000EDC83 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8430A1EB227F2D82000EDC83 /* AlbumViewController.swift */; };
 		DC1115FD227EFB51006AF6D3 /* SecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1115FC227EFB51006AF6D3 /* SecondCell.swift */; };
@@ -48,6 +49,7 @@
 		7B0AC7C51AAEF90000885D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7FCCA9FE063A64D60EE594C6 /* Pods-Pinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinterest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pinterest/Pods-Pinterest.debug.xcconfig"; sourceTree = "<group>"; };
 		842EA429227F55A200685CDD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		842EA42B227F6E5300685CDD /* MypageDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageDetailVC.swift; sourceTree = "<group>"; };
 		8430A1E9227F293D000EDC83 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		8430A1EB227F2D82000EDC83 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		DC1115FC227EFB51006AF6D3 /* SecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		77E6C75C1F2E38270015ED2A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				842EA42B227F6E5300685CDD /* MypageDetailVC.swift */,
 				DCD99359227F10FB00814B78 /* MypageVC.swift */,
 				77E6C75D1F2E38270015ED2A /* PhotoStreamViewController.swift */,
 				8430A1E9227F293D000EDC83 /* GalleryViewController.swift */,
@@ -347,6 +350,7 @@
 				DCD99360227F110A00814B78 /* Requestable.swift in Sources */,
 				77E6C76C1F2E384A0015ED2A /* AppDelegate.swift in Sources */,
 				DCD99363227F110A00814B78 /* Status.swift in Sources */,
+				842EA42C227F6E5300685CDD /* MypageDetailVC.swift in Sources */,
 				77E6C76F1F2E385E0015ED2A /* PhotoStreamViewController.swift in Sources */,
 				DCD99356227F0D9500814B78 /* CategoryRow.swift in Sources */,
 				842EA42A227F55A200685CDD /* WriteViewController.swift in Sources */,
