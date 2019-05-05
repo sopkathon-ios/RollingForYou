@@ -35,20 +35,22 @@ struct Photo {
   var caption: String
   var comment: String
   var image: UIImage
+  var people: String
   
   
-  init(caption: String, comment: String, image: UIImage) {
+  init(caption: String, comment: String, image: UIImage, people: String) {
     self.caption = caption
     self.comment = comment
     self.image = image
+    self.people = people
   }
   
   init?(dictionary: [String: String]) {
-    guard let caption = dictionary["Caption"], let comment = dictionary["Comment"], let photo = dictionary["Photo"],
+    guard let caption = dictionary["Caption"], let comment = dictionary["Comment"], let photo = dictionary["Photo"], let people = dictionary["People"],
       let image = UIImage(named: photo) else {
         return nil
     }
-    self.init(caption: caption, comment: comment, image: image)
+    self.init(caption: caption, comment: comment, image: image, people: people)
   }
 
   static func allPhotos() -> [Photo] {
