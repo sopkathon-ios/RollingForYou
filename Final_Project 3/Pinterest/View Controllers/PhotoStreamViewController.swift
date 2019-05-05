@@ -68,17 +68,16 @@ class PhotoStreamViewController: UICollectionViewController {
     
     @IBAction func tabAddButton(_ sender: Any) {
         
+        let storyboard = UIStoryboard.init(name: "Storyboard", bundle: nil)
+        
+        guard let dvc = storyboard.instantiateViewController(withIdentifier: "MakePaperViewController") as? MakePaperViewController else{
+            return
+        }
+        
+        navigationController?.pushViewController(dvc, animated: false)
     }
-    
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-        
-        
-        
-        self.dismiss(animated: true, completion: { () -> Void in
-        })
-        
-        //imageView.image = image
-    }}
+}
+
 
 extension PhotoStreamViewController {
   

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,15 +12,15 @@
         <!--페이퍼 생성-->
         <scene sceneID="Ufy-mI-78u">
             <objects>
-                <viewController id="zHE-4h-J4P" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MakePaperViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zHE-4h-J4P" customClass="MakePaperViewController" customModule="Pinterest" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Crg-z4-ok7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gr9-aD-bFA">
-                                <rect key="frame" x="0.0" y="89" width="414" height="261"/>
+                                <rect key="frame" x="0.0" y="45" width="414" height="261"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="br8-o0-OCQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="br8-o0-OCQ">
                                         <rect key="frame" x="10" y="11" width="134" height="238"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="134" id="7br-ek-BET"/>
@@ -63,6 +63,59 @@
                                     <constraint firstItem="br8-o0-OCQ" firstAttribute="top" secondItem="Gr9-aD-bFA" secondAttribute="top" constant="11" id="wPq-oM-kaL"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구 초대하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-JH-Woa">
+                                <rect key="frame" x="17" y="325" width="367" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.4392187595" green="0.43921005730000001" blue="0.4392159283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-Ia-SqA">
+                                <rect key="frame" x="0.0" y="821" width="414" height="75"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="c2N-Ah-lrJ"/>
+                                </constraints>
+                                <state key="normal" title="생성하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeButton:" destination="zHE-4h-J4P" eventType="touchUpInside" id="bsu-cH-Cfh"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="sHo-77-WEq">
+                                <rect key="frame" x="54" y="361" width="306" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L65-n8-nap" customClass="CustomButton" customModule="Pinterest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                        <color key="backgroundColor" red="0.97989541290000004" green="0.88625818489999997" blue="0.89019554850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="L65-n8-nap" secondAttribute="height" multiplier="1:1" id="n2n-bm-us7"/>
+                                        </constraints>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kIU-hd-hwd" customClass="CustomImgView" customModule="Pinterest">
+                                        <rect key="frame" x="81" y="0.0" width="63" height="63"/>
+                                        <color key="backgroundColor" red="0.97989541290000004" green="0.88625818489999997" blue="0.89019554850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kIU-hd-hwd" secondAttribute="height" multiplier="1:1" id="Xoy-he-YDQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06" translatesAutoresizingMaskIntoConstraints="NO" id="DZK-1h-WOM" customClass="CustomImgView" customModule="Pinterest" customModuleProvider="target">
+                                        <rect key="frame" x="162" y="0.0" width="63" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DZK-1h-WOM" secondAttribute="height" multiplier="1:1" id="Yix-x2-vhZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="09" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-kk-muP" customClass="CustomImgView" customModule="Pinterest" customModuleProvider="target">
+                                        <rect key="frame" x="243" y="0.0" width="63" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pXe-kk-muP" secondAttribute="height" multiplier="1:1" id="KS4-iJ-GHt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fjc-8F-1dj">
                                 <rect key="frame" x="17" y="514" width="340" height="259"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,86 +130,29 @@
 이용안내
 •결제 후 3일 이내 취소 시 당일 카드사에서 환불처리
 •결제 후 3일 이내 취소 시 당일 카드사에서 환불처리
-
-이용안내
-•결제 후 3일 이내 취소 시 당일 카드사에서 환불처리
 </string>
                                 <color key="textColor" red="0.4392187595" green="0.43921005730000001" blue="0.4392159283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구 초대하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xe-JH-Woa">
-                                <rect key="frame" x="17" y="369" width="87.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.4392187595" green="0.43921005730000001" blue="0.4392159283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-Ia-SqA">
-                                <rect key="frame" x="0.0" y="821" width="414" height="75"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="c2N-Ah-lrJ"/>
-                                </constraints>
-                                <state key="normal" title="생성하기">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="sHo-77-WEq">
-                                <rect key="frame" x="54" y="405" width="306" height="63"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L65-n8-nap" customClass="CustomButton" customModule="Pinterest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
-                                        <color key="backgroundColor" red="0.97989541290000004" green="0.88625818489999997" blue="0.89019554850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="L65-n8-nap" secondAttribute="height" multiplier="1:1" id="n2n-bm-us7"/>
-                                        </constraints>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kIU-hd-hwd" customClass="CustomImage" customModule="sopkhaton_prac_2" customModuleProvider="target">
-                                        <rect key="frame" x="81" y="0.0" width="63" height="63"/>
-                                        <color key="backgroundColor" red="0.97989541290000004" green="0.88625818489999997" blue="0.89019554850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="kIU-hd-hwd" secondAttribute="height" multiplier="1:1" id="Xoy-he-YDQ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZK-1h-WOM" customClass="CustomImgView" customModule="Pinterest" customModuleProvider="target">
-                                        <rect key="frame" x="162" y="0.0" width="63" height="63"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="DZK-1h-WOM" secondAttribute="height" multiplier="1:1" id="Yix-x2-vhZ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-kk-muP" customClass="CustomImgView" customModule="Pinterest" customModuleProvider="target">
-                                        <rect key="frame" x="243" y="0.0" width="63" height="63"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="pXe-kk-muP" secondAttribute="height" multiplier="1:1" id="KS4-iJ-GHt"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gr9-aD-bFA" firstAttribute="leading" secondItem="jry-CU-X8o" secondAttribute="leading" id="1Ro-Iu-7zf"/>
-                            <constraint firstItem="jry-CU-X8o" firstAttribute="trailing" secondItem="Fjc-8F-1dj" secondAttribute="trailing" constant="57" id="8Fb-iE-0yJ"/>
+                            <constraint firstItem="jry-CU-X8o" firstAttribute="trailing" secondItem="2xe-JH-Woa" secondAttribute="trailing" constant="30" id="6QY-iw-RYd"/>
                             <constraint firstItem="2xe-JH-Woa" firstAttribute="leading" secondItem="jry-CU-X8o" secondAttribute="leading" constant="17" id="AT9-ER-Cxe"/>
-                            <constraint firstItem="9Pg-Ia-SqA" firstAttribute="firstBaseline" secondItem="Fjc-8F-1dj" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="Mgg-1Z-vLv"/>
-                            <constraint firstItem="2xe-JH-Woa" firstAttribute="top" secondItem="jry-CU-X8o" secondAttribute="top" constant="281" id="Tl5-Sx-uPa"/>
                             <constraint firstItem="sHo-77-WEq" firstAttribute="leading" secondItem="jry-CU-X8o" secondAttribute="leading" constant="54" id="XOk-fn-bSi"/>
                             <constraint firstItem="9Pg-Ia-SqA" firstAttribute="top" secondItem="Fjc-8F-1dj" secondAttribute="bottom" constant="48" id="Yrx-pm-a0A"/>
-                            <constraint firstItem="sHo-77-WEq" firstAttribute="top" secondItem="jry-CU-X8o" secondAttribute="top" constant="317" id="ZI8-OG-1SD"/>
-                            <constraint firstItem="9Pg-Ia-SqA" firstAttribute="bottom" secondItem="jry-CU-X8o" secondAttribute="bottom" constant="34" id="aEX-F1-Lzc"/>
-                            <constraint firstItem="jry-CU-X8o" firstAttribute="trailing" secondItem="2xe-JH-Woa" secondAttribute="trailing" constant="309.5" id="bdY-vO-usl"/>
                             <constraint firstItem="9Pg-Ia-SqA" firstAttribute="trailing" secondItem="Gr9-aD-bFA" secondAttribute="trailing" id="fJr-3D-iwV"/>
                             <constraint firstItem="Gr9-aD-bFA" firstAttribute="top" secondItem="jry-CU-X8o" secondAttribute="top" constant="1" id="fjT-Xr-TEO"/>
                             <constraint firstItem="jry-CU-X8o" firstAttribute="trailing" secondItem="Gr9-aD-bFA" secondAttribute="trailing" id="h1B-gI-1aM"/>
-                            <constraint firstItem="sHo-77-WEq" firstAttribute="firstBaseline" secondItem="2xe-JH-Woa" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="kcG-2X-BFe"/>
+                            <constraint firstItem="2xe-JH-Woa" firstAttribute="top" secondItem="Gr9-aD-bFA" secondAttribute="bottom" constant="19" id="kqB-iB-1E9"/>
                             <constraint firstItem="Fjc-8F-1dj" firstAttribute="leading" secondItem="jry-CU-X8o" secondAttribute="leading" constant="17" id="sw1-qo-Cza"/>
                             <constraint firstItem="9Pg-Ia-SqA" firstAttribute="leading" secondItem="Gr9-aD-bFA" secondAttribute="leading" id="uAY-cA-QbB"/>
-                            <constraint firstItem="Fjc-8F-1dj" firstAttribute="top" secondItem="jry-CU-X8o" secondAttribute="top" constant="426" id="ufc-fc-0q1"/>
+                            <constraint firstItem="9Pg-Ia-SqA" firstAttribute="bottom" secondItem="jry-CU-X8o" secondAttribute="bottom" constant="34" id="uZh-lJ-7EO"/>
                             <constraint firstItem="sHo-77-WEq" firstAttribute="top" secondItem="2xe-JH-Woa" secondAttribute="bottom" constant="16.5" id="uqL-1P-abw"/>
                             <constraint firstItem="jry-CU-X8o" firstAttribute="trailing" secondItem="sHo-77-WEq" secondAttribute="trailing" constant="54" id="wfo-XW-WFl"/>
+                            <constraint firstItem="Fjc-8F-1dj" firstAttribute="top" secondItem="sHo-77-WEq" secondAttribute="bottom" constant="90" id="yzJ-ya-0IV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jry-CU-X8o"/>
                     </view>
@@ -166,23 +162,10 @@
             </objects>
             <point key="canvasLocation" x="1069.5652173913045" y="160.71428571428569"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="tV2-mO-zXD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8rV-HL-bCa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NfH-7y-VBU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zHE-4h-J4P" kind="relationship" relationship="rootViewController" id="8QW-Ze-Gbh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eq8-bV-AMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-39.130434782608695" y="161.38392857142856"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="02" width="640" height="427"/>
+        <image name="06" width="640" height="427"/>
+        <image name="09" width="640" height="360"/>
+    </resources>
 </document>
