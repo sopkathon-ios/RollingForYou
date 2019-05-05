@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Rolling for you-->
+        <!--메인으로-->
         <scene sceneID="kqS-Pz-3ln">
             <objects>
                 <collectionViewController id="Zyh-ad-FlB" customClass="PhotoStreamViewController" customModule="Pinterest" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khC-vr-mlt">
                                                     <rect key="frame" x="0.0" y="0.0" width="182" height="324"/>
-                                                    <color key="backgroundColor" red="0.83250656022273051" green="1" blue="0.12957949502166344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="솝커톤에서 있었던 일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-Ha-DAg">
                                                     <rect key="frame" x="4" y="281" width="174" height="17"/>
@@ -106,10 +106,12 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xrt-16-fbz">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="200"/>
-                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-4D-zuE">
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-4D-zuE">
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="200"/>
+                                            <state key="normal" image="Group"/>
                                             <connections>
                                                 <action selector="tabAddButton:" destination="Zyh-ad-FlB" eventType="touchUpInside" id="tEZ-Ts-Yte"/>
                                             </connections>
@@ -137,8 +139,9 @@
                             <outlet property="delegate" destination="Zyh-ad-FlB" id="K8V-Lj-5ur"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Rolling for you" id="Tbl-lp-dr2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="v55-ul-RB9">
+                    <navigationItem key="navigationItem" title="메인으로" id="Tbl-lp-dr2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Groups2" style="plain" id="v55-ul-RB9">
+                            <color key="tintColor" red="1" green="0.65597458269999998" blue="0.33392034850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="tabBarButton:" destination="Zyh-ad-FlB" id="5Sv-1i-Qc8"/>
                             </connections>
@@ -218,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="2242" y="-968"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navi View Controller-->
         <scene sceneID="haL-jR-hWU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJs-Wl-nCX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJs-Wl-nCX" customClass="MainNaviViewController" customModule="Pinterest" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ler-pq-4Yd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -273,14 +276,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-gS-joO">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-hI-rfw">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-hI-rfw">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="531"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="531" id="ZG7-rN-9Ii"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="솝커톤에서 있었던 일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-W2-Y2x">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-W2-Y2x">
                                                 <rect key="frame" x="17" y="548" width="380" height="21"/>
+                                                <string key="text">솝커톤 롤링포유 7조 친구들
+</string>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -294,7 +299,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-zh-LD6">
                                                 <rect key="frame" x="17" y="791" width="36" height="36"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-jc-1GU">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-jc-1GU">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                     </imageView>
                                                 </subviews>
@@ -324,7 +329,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bco-Al-0xT">
                                                 <rect key="frame" x="17" y="847" width="36" height="36"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="2Ok-22-jba">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="2Ok-22-jba">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                     </imageView>
                                                 </subviews>
@@ -375,7 +380,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34j-t9-Hgo">
                                                 <rect key="frame" x="17" y="941" width="36" height="36"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-sH-QtN">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-sH-QtN">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                     </imageView>
                                                 </subviews>
@@ -493,8 +498,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="03" width="640" height="427"/>
-        <image name="04" width="427" height="640"/>
-        <image name="05" width="427" height="640"/>
+        <image name="1" width="190" height="332"/>
+        <image name="10" width="190" height="332"/>
+        <image name="3" width="190" height="332"/>
+        <image name="4" width="190" height="332"/>
+        <image name="Group" width="190" height="208"/>
+        <image name="Groups2" width="24" height="24"/>
     </resources>
 </document>

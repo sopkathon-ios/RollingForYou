@@ -32,6 +32,8 @@ import UIKit
 import AVFoundation
 
 class PhotoStreamViewController: UICollectionViewController {
+    
+    
   
   var photos = Photo.allPhotos()
   
@@ -43,6 +45,13 @@ class PhotoStreamViewController: UICollectionViewController {
     super.viewDidLoad()
    
     //imagePicker.delegate = self
+    
+    
+    let image: UIImage = UIImage(named: "logo.png")!
+    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 80, height: 30))
+    imageView.contentMode = .scaleAspectFit
+    imageView.image = image
+    self.navigationItem.titleView = imageView
     
     if let patternImage = UIImage(named: "Pattern") {
       view.backgroundColor = UIColor.white

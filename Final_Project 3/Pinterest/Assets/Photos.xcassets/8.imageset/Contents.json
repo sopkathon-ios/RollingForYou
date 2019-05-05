@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "KakaoTalk_Photo_2019-05-05-20-52-41.png",
+      "filename" : "tokyo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "KakaoTalk_Photo_2019-05-05-20-52-41@2x.png",
+      "filename" : "tokyo@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "KakaoTalk_Photo_2019-05-05-20-52-41@3x.png",
+      "filename" : "tokyo@3x.png",
       "scale" : "3x"
     }
   ],

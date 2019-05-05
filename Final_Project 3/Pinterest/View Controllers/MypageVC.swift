@@ -60,6 +60,11 @@ class MypageVC: UIViewController {
     
     @IBAction func clickOurMemoriesAction(_ sender: Any) {
     }
+    @IBAction func backButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dvc = storyboard.instantiateViewController(withIdentifier: "MainNaviViewController") as! MainNaviViewController
+        UIApplication.topViewcontroller()?.navigationController?.pushViewController(dvc, animated: false)
+    }
 }
 
 extension MypageVC : UITableViewDelegate {}
